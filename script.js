@@ -62,3 +62,40 @@ for(let i = 0; i <= 3; i++){
         }
     }
 }
+console.log('------------------------------');
+// Write a function that takes an array of numbers as input and returns the sum of all the elements in the array that are greater than 10.
+let sumationOnCondition = (array) => {
+    let sum = 0;
+    array.filter((value) => {
+        if(value > 10){
+            sum += value;
+        }
+    })
+    return sum;
+}
+let myarray = [4, 6, 16, 32, 5];
+console.log(myarray.join('-'));
+console.log(("Sumation among that are greater than 10: " + sumationOnCondition(myarray)));
+
+// Take an array of numbers in a function as a parameter and push a new values multipled by 2 in the same array 
+const mby2 = (array) => {
+    array.forEach((value, index, array) => {
+       array[index] = value * value;
+    })
+    return array;
+}
+let myArray = [2, 4, 6, 8, 10];
+console.log("Current Data: " + myArray.join('-'));
+console.log("Squared Data: " + mby2(myArray).join('-'));
+
+// Random problems 
+const bio = {
+    name: "Muntasir Pranto",
+    age: 24,
+    Prfession: "Software Engineer",
+    skilled: "Web Developing",
+    bestTeacher: true
+};
+for(let i in bio){
+    console.log(`${i}: ${bio[i]}`);
+}
