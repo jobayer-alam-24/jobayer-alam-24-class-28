@@ -5,7 +5,23 @@ const abcSchool = [
     [10, 10, 34, 54, 60],
     [11, 22, 33, 44, 56],
 ];
-
+for(let i = 0; i <= 3; i++){
+    if(i == 0){
+        console.log("Section A: ");
+    }
+    if(i == 1){
+        console.log("Section B: ");
+    }
+    if(i == 2){
+        console.log("Section C: ");
+    }
+    if(i == 3){
+        console.log("Section D: ");
+    }
+    console.log(abcSchool[i].join(', '));
+}
+console.log("All operatios are operated from these data.");
+console.log('--------------------');
 for(let i = 0; i <= 3; i++){
     if(i == 0){
         console.log("Section: A");
